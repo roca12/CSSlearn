@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
 
         <!-- Titulo -->
-        <title>Utilidades</title>
+        <title>Anidado</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
         <!-- Estilos BOOTSTRAP CDN -->
@@ -20,17 +20,24 @@
         <!-- CSS personalizado -->
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- fontawesome -->
-        <script src="https://kit.fontawesome.com/8e9e769e03.js" crossorigin="anonymous"></script>
+
 
     </head>
 
     <body>    
-        <div class="container">
-            
-            
+        <div class="container-fluid">
+            <!--Anidado -->
+            <div class="row">
+                <div class="col-sm-9" style="border: 1px solid #000; background: #fafafa">
+                    Nivel de rejilla 1
+                    <div class="row">
+                        <div class="col-8" style="border: 1px solid #000; background: #fafafa">Nivel de rejilla 2</div>
+                        <div class="col-4" style="border: 1px solid #000; background: #fafafa">Nivel de rejilla 2</div>
+                    </div>
+                </div>
+            </div>
         </div>
-           
+
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
