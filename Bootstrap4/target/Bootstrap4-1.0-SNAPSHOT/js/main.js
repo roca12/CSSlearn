@@ -5,3 +5,13 @@
  */
 
 
+var myVar;
+
+function initLoader() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("divcontainer").style.display = "block";
+}
